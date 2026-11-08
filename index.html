@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bright River — Menu</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #191919; }
+    body { font-family: Georgia, serif; }
+    .menu { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; gap: 12px; width: 100%; max-width: 1500px; margin: 0 auto; padding: 12px; }
+    .botao { display: block; border-radius: 12px; text-decoration: none; transition: transform .22s ease, filter .22s ease; outline-offset: 4px; }
+    .botao img { display: block; width: 100%; height: auto; border-radius: 12px; }
+    .botao:hover, .botao:focus-visible { transform: translateY(-3px); filter: drop-shadow(0 0 8px #c99650); }
+    @media (max-width: 600px) { .menu { grid-template-columns: 1fr; max-width: 380px; gap: 8px; } }
+    @media (prefers-reduced-motion: reduce) { .botao { transition: none; } .botao:hover { transform: none; } }
+  </style>
+</head>
+<body>
+  <nav class="menu" aria-label="Arquivos do Mundo">
+    <!-- TROQUE os links abaixo pelos links das páginas correspondentes do seu Notion. -->
+    <a class="botao" href="https://www.notion.so/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Facções e NPCs">
+      <img src="Npcs.png" alt="Facções e NPCs">
+    </a>
+    <a class="botao" href="https://www.notion.so/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Missões e Contratos">
+      <img src="Missões.png" alt="Missões e Contratos">
+    </a>
+    <a class="botao" href="https://www.notion.so/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Cidades e Reinos">
+      <img src="Cidades.png" alt="Cidades e Reinos">
+    </a>
+  </nav>
+</body>
+</html>
